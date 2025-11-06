@@ -1,36 +1,34 @@
-# 🚀 InvestorIQ - Complete Development Guide
+# InvestorIQ - Investment Intelligence Platform
 
-> **A modern, AI-powered investment intelligence platform for exploring stocks, trends, and insights — built with 100% FREE resources!**
+A modern, AI-powered investment intelligence platform for exploring stocks, trends, and insights built with free resources.
 
----
+## What's Included
 
-## 📁 What's Included
+This package includes all documentation and resources needed to build InvestorIQ:
 
-This complete guide package includes everything you need to build InvestorIQ from scratch:
+### Documentation Files
 
-### 📄 Documentation Files
-
-1. **[PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md)** ⭐ **START HERE**
+1. **PROJECT_SUMMARY.md** - START HERE
    - Complete overview of all resources
-   - Quick answers to your questions
+   - Quick answers to common questions
    - 3-hour quick start plan
    - Visual project roadmap
 
-2. **[QUICK_START_GUIDE.md](./QUICK_START_GUIDE.md)** 🚀
+2. **QUICK_START_GUIDE.md**
    - Step-by-step setup (30 minutes)
    - API key registration guides
    - Project structure templates
    - First-day action plan
    - Week 1 development roadmap
 
-3. **[DATA_SOURCES_GUIDE.md](./DATA_SOURCES_GUIDE.md)** 📊
-   - Complete list of FREE APIs (Alpha Vantage, Twelve Data, Finnhub, Groq)
+3. **DATA_SOURCES_GUIDE.md**
+   - Complete list of free APIs (Alpha Vantage, Twelve Data, Finnhub, Groq)
    - Trending detection strategies
    - LLM integration (Groq, Gemini, Hugging Face)
    - Rate limits and best practices
    - API comparison tables
 
-4. **[IMPLEMENTATION_EXAMPLES.md](./IMPLEMENTATION_EXAMPLES.md)** 💻
+4. **IMPLEMENTATION_EXAMPLES.md**
    - Production-ready code samples
    - Stock API service with caching
    - Multi-factor trending algorithm
@@ -38,28 +36,28 @@ This complete guide package includes everything you need to build InvestorIQ fro
    - React components with real-time data
    - Custom hooks (useStockQuote, useTrending)
 
-5. **[COMPANY_DATABASE.md](./COMPANY_DATABASE.md)** 🏢
+5. **COMPANY_DATABASE.md**
    - 100+ companies by category
    - Complete GICS sector classification
    - Theme-based stock lists (Innovation, Undervalued, Emerging)
    - Symbol lookup reference
    - Logo sources (Clearbit, Finnhub)
 
-### 🧪 Test Script
+### Test Script
 
-**[test-apis.js](./test-apis.js)**
+**test-apis.js**
 - Automated API testing suite
 - Verifies all API connections
 - Tests 8 different endpoints
 - Shows you exactly what's working
-- Run before you start building!
+- Run before you start building
 
 ---
 
-## 🎯 Quick Start (30 Minutes)
+## Quick Start (30 Minutes)
 
 ### Step 1: Get API Keys (10 mins)
-Get your **FREE** API keys from:
+Get your free API keys from:
 
 1. **Alpha Vantage** (stock data): https://www.alphavantage.co/support/#api-key
    - 25 calls/day free
@@ -71,7 +69,7 @@ Get your **FREE** API keys from:
    - 60 calls/min free
 
 4. **Groq** (AI chatbot): https://console.groq.com/keys
-   - 14,400 calls/day free (amazing!)
+   - 14,400 calls/day free
 
 ### Step 2: Test Your APIs (5 mins)
 
@@ -87,11 +85,11 @@ node test-apis.js
 
 You should see:
 ```
-✅ Alpha Vantage: WORKING!
-✅ Twelve Data: WORKING!
-✅ Finnhub: WORKING!
-✅ Groq AI: WORKING!
-🎉 All tests passed! You're ready to build!
+Success: Alpha Vantage: WORKING
+Success: Twelve Data: WORKING
+Success: Finnhub: WORKING
+Success: Groq AI: WORKING
+All tests passed
 ```
 
 ### Step 3: Setup Project (15 mins)
@@ -117,18 +115,18 @@ npm run dev
 
 ---
 
-## 💡 What You Asked, Answered
+## Common Questions
 
-### ❓ "What data do I need?"
+### Question: "What data do I need?"
 **Answer:** 4 types of data:
 1. **Stock prices** - Alpha Vantage / Twelve Data
 2. **Company info** - Finnhub company profiles
 3. **Trending signals** - Finnhub news + social sentiment
 4. **Sector performance** - Alpha Vantage sectors
 
-→ See [DATA_SOURCES_GUIDE.md](./DATA_SOURCES_GUIDE.md) for details
+See DATA_SOURCES_GUIDE.md for details
 
-### ❓ "How do I get stock data?"
+### Question: "How do I get stock data?"
 **Answer:** 3 free options:
 ```javascript
 // Option 1: Alpha Vantage (25 calls/day)
@@ -142,9 +140,9 @@ import yahooFinance from 'yahoo-finance2';
 const quote = await yahooFinance.quote('AAPL');
 ```
 
-→ See [IMPLEMENTATION_EXAMPLES.md](./IMPLEMENTATION_EXAMPLES.md) for code
+See IMPLEMENTATION_EXAMPLES.md for code
 
-### ❓ "How do I detect trending companies?"
+### Question: "How do I detect trending companies?"
 **Answer:** Multi-factor algorithm:
 1. **News volume** (30%) - Count articles in last 7 days
 2. **Social mentions** (30%) - Reddit + Twitter buzz
@@ -156,13 +154,13 @@ const trendingScore =
   (socialMentions * 0.3) + 
   (priceMomentum * 0.4);
 
-if (score > 60) → Mark as "Trending"
+if (score > 60) then Mark as "Trending"
 ```
 
-→ See [IMPLEMENTATION_EXAMPLES.md](./IMPLEMENTATION_EXAMPLES.md#trending-detection)
+See IMPLEMENTATION_EXAMPLES.md for trending detection
 
-### ❓ "How do I use the LLM?"
-**Answer:** Use Groq (fastest & most generous free tier):
+### Question: "How do I use the LLM?"
+**Answer:** Use Groq (fastest and most generous free tier):
 ```javascript
 import Groq from 'groq-sdk';
 
@@ -177,11 +175,11 @@ const completion = await groq.chat.completions.create({
 });
 ```
 
-→ See [DATA_SOURCES_GUIDE.md](./DATA_SOURCES_GUIDE.md#llm-integration)
+See DATA_SOURCES_GUIDE.md for LLM integration
 
 ---
 
-## 📚 Learning Path
+## Learning Path
 
 ### Day 1: Foundation
 - [ ] Read [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md)
@@ -217,34 +215,34 @@ const completion = await groq.chat.completions.create({
 
 ---
 
-## 🎨 Features Included
+## Features Included
 
-### 🏠 Landing Page
+### Landing Page
 - Hero section with animated background
 - Top performing sectors (6 cards)
 - Search bar + profile icon
 - Light/dark mode toggle
 
-### 🤖 AI Chatbot
+### AI Chatbot
 - Split-screen interface
 - Bubble chat messages
 - Context-aware responses
 - Dynamic stock recommendations
 - Category detection
 
-### 📊 Sectors Explorer
+### Sectors Explorer
 - GICS classification hierarchy
 - Collapsible categories
 - Subcategory breakdown
 - Company counts + trend graphs
 
-### 🛒 Watchlist
+### Watchlist
 - Add/remove stocks
 - Compare up to 3 stocks
 - Export to CSV
 - Mini price trend graphs
 
-### 📈 Insights Dashboard
+### Insights Dashboard
 - Sector performance heatmap
 - Top gainers/losers
 - Trending themes
@@ -252,7 +250,7 @@ const completion = await groq.chat.completions.create({
 
 ---
 
-## 💰 Cost: $0/month
+## Cost: Free
 
 | Service | Free Tier | Usage |
 |---------|-----------|-------|
@@ -263,11 +261,11 @@ const completion = await groq.chat.completions.create({
 | Clearbit | Unlimited | Company logos |
 | Vercel | Free tier | Hosting |
 
-**Total: $0** ✅
+**Total: $0**
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 - **Frontend:** React + Next.js 14 (App Router)
 - **Styling:** Tailwind CSS
@@ -280,7 +278,7 @@ const completion = await groq.chat.completions.create({
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 investoriq/
@@ -321,7 +319,7 @@ investoriq/
 
 ---
 
-## 🎨 Design System
+## Design System
 
 ### Colors
 ```css
@@ -344,7 +342,7 @@ investoriq/
 
 ---
 
-## 🔧 Useful Commands
+## Useful Commands
 
 ```bash
 # Development
@@ -361,7 +359,7 @@ vercel                   # Deploy to Vercel
 
 ---
 
-## 🆘 Troubleshooting
+## Troubleshooting
 
 ### Problem: API returns errors
 ```bash
@@ -389,19 +387,19 @@ const systemPrompt = `You are an advisor. Stock data: ${JSON.stringify(stocks)}`
 
 ---
 
-## 📖 Documentation Index
+## Documentation Index
 
 | Document | Purpose | When to Read |
 |----------|---------|--------------|
-| [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md) | Overview & quick reference | **Start here** |
-| [QUICK_START_GUIDE.md](./QUICK_START_GUIDE.md) | Setup instructions | Before building |
-| [DATA_SOURCES_GUIDE.md](./DATA_SOURCES_GUIDE.md) | API documentation | When connecting data |
-| [IMPLEMENTATION_EXAMPLES.md](./IMPLEMENTATION_EXAMPLES.md) | Code examples | While coding |
-| [COMPANY_DATABASE.md](./COMPANY_DATABASE.md) | Stock lists | When adding companies |
+| PROJECT_SUMMARY.md | Overview & quick reference | **Start here** |
+| QUICK_START_GUIDE.md | Setup instructions | Before building |
+| DATA_SOURCES_GUIDE.md | API documentation | When connecting data |
+| IMPLEMENTATION_EXAMPLES.md | Code examples | While coding |
+| COMPANY_DATABASE.md | Stock lists | When adding companies |
 
 ---
 
-## 🎯 Success Checklist
+## Success Checklist
 
 Before you start:
 - [ ] Read PROJECT_SUMMARY.md
@@ -423,30 +421,28 @@ Week 1 goals:
 
 ---
 
-## 🌟 Tips for Success
+## Tips for Success
 
 1. **Start Simple** - Build with mock data first, then add real APIs
 2. **Cache Everything** - Save your precious API calls
 3. **Test Often** - Use the test script to verify APIs
-4. **Progressive Enhancement** - Basic → Data → AI → Polish
+4. **Progressive Enhancement** - Basic to Data to AI to Polish
 5. **Ask for Help** - Stack Overflow, Reddit, Discord
 
 ---
 
-## 🚀 Ready to Build?
+## Ready to Build
 
 You have everything you need:
-- ✅ Free APIs for stock data, news, and AI
-- ✅ Complete company database (100+ stocks)
-- ✅ Trending detection algorithm
-- ✅ Production-ready code examples
-- ✅ Step-by-step guides
-
-**Now go build something amazing!** 💪🔥
+- Free APIs for stock data, news, and AI
+- Complete company database (100+ stocks)
+- Trending detection algorithm
+- Production-ready code examples
+- Step-by-step guides
 
 ---
 
-## 📞 Resources
+## Resources
 
 - **Stack Overflow:** Tag [next.js] [react] [finance-api]
 - **Reddit:** r/reactjs, r/nextjs
@@ -456,11 +452,9 @@ You have everything you need:
 
 ---
 
-## ⭐ Next Steps
+## Next Steps
 
-1. Read [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md) (5 min overview)
-2. Follow [QUICK_START_GUIDE.md](./QUICK_START_GUIDE.md) (30 min setup)
-3. Run `test-apis.js` to verify your APIs
-4. Start building with [IMPLEMENTATION_EXAMPLES.md](./IMPLEMENTATION_EXAMPLES.md)
-
-**Good luck with your hackathon! You've got this! 🎉**
+1. Read PROJECT_SUMMARY.md (5 min overview)
+2. Follow QUICK_START_GUIDE.md (30 min setup)
+3. Run test-apis.js to verify your APIs
+4. Start building with IMPLEMENTATION_EXAMPLES.md
