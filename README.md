@@ -1,16 +1,18 @@
-# InvestorIQ 📈
+﻿# Team-M-AI-L - Hack-the-Clock 2025 Submission
+
+# InvestorIQ ðŸ“ˆ
 
 A modern investor intelligence platform powered by AI to help investors explore stocks, understand trends, and make smarter investment decisions.
 
-## 🌟 Features
+## ðŸŒŸ Features
 
-### 🤖 AI-Powered Chatbot
+### ðŸ¤– AI-Powered Chatbot
 - Interactive AI advisor powered by Ollama (gpt-oss:120b-cloud)
 - Category-aware recommendations with live stock data
 - Natural language queries for stock analysis
 - Real-time market context integration
 
-### 📊 Sectors Explorer
+### ðŸ“Š Sectors Explorer
 - Browse companies by 6 major investment categories:
   - AI & Robotics
   - Fintech
@@ -21,27 +23,27 @@ A modern investor intelligence platform powered by AI to help investors explore 
 - Expandable accordion view with live stock quotes
 - One-click add to watchlist
 
-### 📈 Trends & Insights
+### ðŸ“ˆ Trends & Insights
 - Interactive market performance charts (1D, 1W, 1M, 3M, 1Y)
 - Sector performance heatmap
 - Top gainers and losers
 - Market statistics and volume tracking
 
-### 🎯 Watchlist Management
+### ðŸŽ¯ Watchlist Management
 - Track favorite stocks in personalized watchlist
 - Compare up to 3 stocks side-by-side
 - Export watchlist to CSV
 - Real-time price refresh
 - Visual performance indicators
 
-### 🎨 Modern UI/UX
+### ðŸŽ¨ Modern UI/UX
 - Dark mode support with toggle
 - Responsive design (mobile, tablet, desktop)
 - Smooth animations with Framer Motion
 - Gradient hero sections
 - Clean, professional interface
 
-## 🛠 Tech Stack
+## ðŸ›  Tech Stack
 
 - **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript
@@ -53,7 +55,7 @@ A modern investor intelligence platform powered by AI to help investors explore 
 - **Stock Data**: Yahoo Finance (yahoo-finance2)
 - **AI**: Ollama (local LLM)
 
-## 📦 Installation
+## ðŸ“¦ Installation
 
 ### Prerequisites
 
@@ -89,7 +91,7 @@ npm run dev
 
 Visit [http://localhost:3000](http://localhost:3000) to see the application.
 
-## 📖 Usage Guide
+## ðŸ“– Usage Guide
 
 ### Landing Page
 - View top performing sectors
@@ -126,40 +128,40 @@ Visit [http://localhost:3000](http://localhost:3000) to see the application.
 5. Refresh prices for latest data
 6. Remove stocks with trash icon
 
-## 🏗 Project Structure
+## ðŸ— Project Structure
 
 ```
 investoriq/
-├── src/
-│   ├── app/
-│   │   ├── api/
-│   │   │   ├── chat/          # AI chatbot endpoint
-│   │   │   └── stocks/        # Stock data endpoints
-│   │   ├── chatbot/           # Chatbot page
-│   │   ├── sectors/           # Sectors explorer page
-│   │   ├── trends/            # Trends dashboard page
-│   │   ├── watchlist/         # Watchlist page
-│   │   ├── globals.css        # Global styles + CSS variables
-│   │   ├── layout.tsx         # Root layout
-│   │   ├── page.tsx           # Landing page
-│   │   └── providers.tsx      # React Query provider
-│   ├── components/
-│   │   ├── Hero.tsx           # Hero section
-│   │   ├── Navbar.tsx         # Navigation bar
-│   │   └── SectorCard.tsx     # Sector card component
-│   └── lib/
-│       ├── data/
-│       │   └── companies.ts   # Company database (40+ stocks)
-│       └── services/
-│           ├── ollama.service.ts       # AI service
-│           └── yahoo-finance.service.ts # Stock data service
-├── .env.local                 # Environment variables
-├── package.json
-├── tsconfig.json
-└── README.md
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ app/
+â”‚   â”‚   â”œâ”€â”€ api/
+â”‚   â”‚   â”‚   â”œâ”€â”€ chat/          # AI chatbot endpoint
+â”‚   â”‚   â”‚   â””â”€â”€ stocks/        # Stock data endpoints
+â”‚   â”‚   â”œâ”€â”€ chatbot/           # Chatbot page
+â”‚   â”‚   â”œâ”€â”€ sectors/           # Sectors explorer page
+â”‚   â”‚   â”œâ”€â”€ trends/            # Trends dashboard page
+â”‚   â”‚   â”œâ”€â”€ watchlist/         # Watchlist page
+â”‚   â”‚   â”œâ”€â”€ globals.css        # Global styles + CSS variables
+â”‚   â”‚   â”œâ”€â”€ layout.tsx         # Root layout
+â”‚   â”‚   â”œâ”€â”€ page.tsx           # Landing page
+â”‚   â”‚   â””â”€â”€ providers.tsx      # React Query provider
+â”‚   â”œâ”€â”€ components/
+â”‚   â”‚   â”œâ”€â”€ Hero.tsx           # Hero section
+â”‚   â”‚   â”œâ”€â”€ Navbar.tsx         # Navigation bar
+â”‚   â”‚   â””â”€â”€ SectorCard.tsx     # Sector card component
+â”‚   â””â”€â”€ lib/
+â”‚       â”œâ”€â”€ data/
+â”‚       â”‚   â””â”€â”€ companies.ts   # Company database (40+ stocks)
+â”‚       â””â”€â”€ services/
+â”‚           â”œâ”€â”€ ollama.service.ts       # AI service
+â”‚           â””â”€â”€ yahoo-finance.service.ts # Stock data service
+â”œâ”€â”€ .env.local                 # Environment variables
+â”œâ”€â”€ package.json
+â”œâ”€â”€ tsconfig.json
+â””â”€â”€ README.md
 ```
 
-## 🎨 Color Scheme
+## ðŸŽ¨ Color Scheme
 
 ### Light Mode
 - Background: `#F7F8FA` (Off-white)
@@ -172,7 +174,7 @@ investoriq/
 - Primary: `#29A19C` (Teal) - unchanged
 - Text: `#F7F8FA` (Off-white)
 
-## 📊 Data Sources
+## ðŸ“Š Data Sources
 
 ### Yahoo Finance (Free, No API Key)
 - Real-time stock quotes
@@ -187,7 +189,7 @@ investoriq/
 - Model: gpt-oss:120b-cloud
 - Provides investment advice and analysis
 
-## 🐛 Troubleshooting
+## ðŸ› Troubleshooting
 
 ### Ollama Not Running
 **Error**: "Failed to connect to Ollama"
@@ -218,7 +220,7 @@ ollama list
 - Avoid rapid-fire requests
 - Use batch quote endpoint when possible
 
-## 📝 API Endpoints
+## ðŸ“ API Endpoints
 
 ### GET `/api/stocks/quote`
 Get single or batch stock quotes
@@ -239,7 +241,7 @@ AI chatbot conversation
 }
 ```
 
-## 🎯 Future Enhancements
+## ðŸŽ¯ Future Enhancements
 
 - [ ] Stock comparison charts
 - [ ] Portfolio tracking with virtual trading
@@ -249,10 +251,10 @@ AI chatbot conversation
 - [ ] Technical indicators (RSI, MACD, etc.)
 - [ ] Advanced filtering and sorting
 
-## 📄 License
+## ðŸ“„ License
 
 MIT License - Feel free to use this project for learning and development.
 
 ---
 
-Built with ❤️ for the SGTA Hackathon 2025
+Built with â¤ï¸ for the SGTA Hackathon 2025
