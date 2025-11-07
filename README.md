@@ -2,7 +2,7 @@
 
 
 
-# InvestorIQ 📈# InvestorIQ ðŸ“ˆ
+# InvestorIQ
 
 
 
